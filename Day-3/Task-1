@@ -1,0 +1,13 @@
+function greet(name) {
+  console.log("Hello " + name);
+}
+greet("vetri");
+
+function addAll(...nums) {
+  let total = 0;
+  for (let n of nums) {
+    total += n;
+  }
+  console.log("Total:", total);
+}
+addAll(5, 10, 15);
