@@ -1,0 +1,22 @@
+Task3
+
+let a = 10;           // Number
+let b = "vetri";      // String
+let c = true;         // Boolean
+let d = null;         // Null
+let e;                // Undefined
+let f = {x: 1};       // Object
+let g = Symbol("id"); // Symbol
+
+console.log(typeof a);
+console.log(typeof b);
+console.log(typeof c);
+console.log(typeof d);
+console.log(typeof e);
+console.log(typeof f);
+console.log(typeof g);
+
+console.log(Number("20"));  // 20
+console.log(String(50));    // "50"
+console.log("5" * 2);       // 10
+console.log("5" + 2);       // "52"
