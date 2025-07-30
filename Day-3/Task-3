@@ -1,0 +1,17 @@
+function done(message) {
+  console.log("Finished:", message);
+}
+
+function process(callback) {
+  let msg = "Task done";
+  callback(msg);
+}
+process(done);
+
+var test = "Global";
+function check() {
+  let test = "Local";
+  console.log(test);
+}
+check();
+console.log(test);
