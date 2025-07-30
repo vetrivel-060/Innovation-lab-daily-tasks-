@@ -1,0 +1,14 @@
+var name = "Vetri";
+let age = 18;
+const college = "KGISL";
+
+console.log(name);
+console.log(age);
+console.log(college);
+
+name = "Vetri";
+age = 19;
+
+console.log(name);
+console.log(age);
+
