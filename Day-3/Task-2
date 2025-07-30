@@ -1,13 +1,7 @@
-function greet(name) {
-  console.log("Hello " + name);
-}
-greet("vetri");
+const square = function (x) {
+  return x * x;
+};
+console.log(square(4));
 
-function addAll(...nums) {
-  let total = 0;
-  for (let n of nums) {
-    total += n;
-  }
-  console.log("Total:", total);
-}
-addAll(5, 10, 15);
+const cube = (x) => x * x * x;
+console.log(cube(3));
