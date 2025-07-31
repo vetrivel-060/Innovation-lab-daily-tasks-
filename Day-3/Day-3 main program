@@ -1,0 +1,45 @@
+// Task Manager Module
+let tasks = [];
+
+// Add Task function with callback
+function addTask(task, callback) {
+    tasks.push(task);
+    callback();
+}
+
+// Callback to print current tasks
+const printTasks = () => {
+    console.log("Current Tasks:");
+    tasks.forEach((task, index) => {
+        console.log(${index + 1}. ${task});
+    });
+};
+
+// Function to add multiple tasks using arbitrary arguments
+function addMultipleTasks(...newTasks) {
+    newTasks.forEach(task => tasks.push(task));
+    console.log("Added multiple tasks.");
+    printTasks();
+}
+
+// Demonstrating variable scopes
+function scopeTest() {
+    var a = "var scoped";
+    let b = "let scoped";
+    const c = "const scoped";
+
+    console.log("Inside Function:");
+    console.log(a);
+    console.log(b);
+    console.log(c);
+}
+
+addTask("Learn JS", printTasks);
+addTask("Build Task Manager", printTasks);
+addMultipleTasks("Task 1", "Task 2", "Task 3");
+
+scopeTest();
+
+console.log("Outside Function:");
+console.log(globalVar); // Accessible
+// console.log(a); // Not accessible
