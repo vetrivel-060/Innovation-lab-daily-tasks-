@@ -1,0 +1,21 @@
+// Generate random number between 1 and 100
+const randomNum = Math.floor(Math.random() * 100) + 1;
+console.log("Random Number:", randomNum);
+
+// Round numbers
+console.log("Round 4.6:", Math.round(4.6));      // 5
+console.log("Ceil 4.2:", Math.ceil(4.2));         // 5
+console.log("Floor 4.8:", Math.floor(4.8));       // 4
+
+// Find min and max in a list
+const numbers = [12, 45, 3, 89, 27];
+console.log("Max:", Math.max(...numbers));        // 89
+console.log("Min:", Math.min(...numbers));        // 3
+
+// String manipulations
+let text = "hello JavaScript!";
+console.log("Uppercase:", text.toUpperCase());             // HELLO JAVASCRIPT!
+console.log("Lowercase:", text.toLowerCase());             // hello javascript!
+console.log("Substring (0, 5):", text.substring(0, 5));     // hello
+console.log("Includes 'Java':", text.includes("Java"));     // true
+console.log("Replace:", text.replace("JavaScript", "World")); // hello World!
