@@ -1,0 +1,2 @@
+What does Math.floor(4.7) return?
+ Answer: 4 (It rounds down to the nearest integer)
