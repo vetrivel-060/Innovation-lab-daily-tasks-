@@ -1,0 +1,23 @@
+// Create arrays
+const fruits = ["apple", "banana", "cherry"];
+const marks = [78, 85, 92];
+
+// Access and modify elements
+console.log("First fruit:", fruits[0]);  // apple
+fruits[1] = "mango";                    // change banana to mango
+
+// Get array size
+console.log("Total fruits:", fruits.length);
+
+// Add/Remove elements
+fruits.push("orange");   // add to end
+console.log("After push:", fruits);
+
+fruits.pop();            // remove from end
+console.log("After pop:", fruits);
+
+fruits.shift();          // remove from start
+console.log("After shift:", fruits);
+
+fruits.unshift("kiwi");  // add to start
+console.log("After unshift:", fruits);
