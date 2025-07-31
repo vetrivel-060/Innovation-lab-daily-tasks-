@@ -1,0 +1,25 @@
+const numbers = [2, 4, 6, 8];
+
+// forEach – print elements
+console.log("forEach:");
+numbers.forEach(num => console.log(num));
+
+// map – square each number
+const squares = numbers.map(num => num * num);
+console.log("\nmap (squares):", squares);
+
+// for-in – iterate over indexes
+console.log("\nfor-in:");
+for (let index in numbers) {
+  console.log(Index ${index}, Value: ${numbers[index]});
+}
+
+// for-of – iterate over values
+console.log("\nfor-of:");
+for (let value of numbers) {
+  console.log(value);
+}
+
+// Compare outputs and behaviors:
+// - forEach and for-of iterate over values
+// - for-in gives indexes
