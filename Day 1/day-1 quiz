@@ -1,0 +1,22 @@
+  1. What is the difference between let and var?
+   var
+   var is function-scoped and can be redeclared in the same scope.
+   It is hoisted and initialized with undefined.
+   let
+   let is block-scoped and cannot be redeclared in the same block.
+   It is hoisted but not initialized — accessing before declaration causes an error.
+
+  2. What will be the output of 5 + '5' in JavaScript?  
+     *(Answer: '55', due to string concatenation)*
+  3. Which operator is used for strict equality comparison?  
+     *(Answer: ===)*
+  4. What does the ternary operator do?  
+     *(Answer: It’s a shorthand for if-else, syntax: condition ? value1 : value2)*
+  5. Predict the output of a small code snippet with increment/decrement operators.
+     #include <stdio.h>
+     int main() {
+    int x = 5;
+    int y = ++x;
+    printf("%d %d", x, y);//output: 6 6
+    return 0;
+    }
