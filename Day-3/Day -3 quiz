@@ -1,0 +1,18 @@
+Q1: How do you define an arrow function? Give syntax.
+const add = (a, b) => a + b;
+
+Q2: What is a callback function? Why is it useful?
+A callback function is a function passed as an argument to another function to be executed later.
+Useful for handling asynchronous operations or executing logic after an event.
+
+Q3: How do function expressions differ from function declarations?
+Function Declaration is hoisted (can be used before declaration).
+function greet() {}
+
+Function Expression is not hoisted.
+const greet = function() {};
+
+Q4: What is the difference between global and local scope?
+Global scope: Variables declared outside any function — accessible everywhere.
+
+Local scope: Variables declared inside a function — accessible only within that function.
