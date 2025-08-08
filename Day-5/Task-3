@@ -1,0 +1,26 @@
+// Example object
+const student = {
+    name: "Vetri",
+    age: 19,
+    course: "Computer Technology",
+    address: {
+        city: "Sathyamangalam",
+        state: "Tamil Nadu"
+    }
+};
+
+// Destructuring to extract properties into variables
+const { name, age } = student;
+console.log(Name: ${name}, Age: ${age});
+
+// Destructuring with default values
+const { grade = "A+" } = student; // If 'grade' doesn't exist, default to "A+"
+console.log(Grade: ${grade});
+
+// Destructuring nested objects
+const { address: { city, state } } = student;
+console.log(City: ${city}, State: ${state});
+
+// Using the spread operator to clone and merge objects
+const updatedStudent = { ...student, grade: "A", college: "KG College of Arts and Science" };
+console.log("Updated Student:", updatedStudent);
