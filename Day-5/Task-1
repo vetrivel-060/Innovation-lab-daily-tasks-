@@ -1,0 +1,22 @@
+// Using filter() to get numbers > 10
+let numbers = [5, 12, 18, 3, 7];
+let greaterThan10 = numbers.filter(n => n > 10);
+console.log("Numbers > 10:", greaterThan10);
+
+// Using reduce() to calculate the sum
+let total = numbers.reduce((acc, n) => acc + n, 0);
+console.log("Sum of numbers:", total);
+
+// Using slice() to get part of the array
+let sliced = numbers.slice(1, 4);
+console.log("Sliced part:", sliced);
+
+// Using splice() to remove and add elements
+numbers.splice(2, 1, 99);
+console.log("After splice:", numbers);
+
+// Using spread operator to clone and merge arrays
+let cloned = [...numbers];
+let merged = [...numbers, 50, 60];
+console.log("Cloned:", cloned);
+console.log("Merged:", merged);
