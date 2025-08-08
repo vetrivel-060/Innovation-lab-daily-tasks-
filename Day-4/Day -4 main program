@@ -37,6 +37,6 @@ console.log(results);
 console.log("\nCongratulations:");
 for (const student of students) {
   if (student.score >= 85) {
-    console.log(🎉 Congrats ${student.name}, you scored ${student.score}!);
+    console.log(Congrats ${student.name}, you scored ${student.score}!);
   }
 }
