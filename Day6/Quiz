@@ -1,0 +1,14 @@
+Q: How do you destructure an object with nested properties?
+
+You can match the same structure inside curly braces when extracting values.
+
+const user = {
+  name: "Asha",
+  address: {
+    city: "Delhi",
+    pin: 110001
+  }
+};
+
+const { address: { city, pin } } = user;
+console.log(city, pin);  // Delhi 110001
