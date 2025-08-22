@@ -1,0 +1,11 @@
+function greet(g) {
+  return g + " " + this.person;
+}
+
+const data = { person: "Nivya" };
+
+console.log(greet.call(data, "Hello"));
+console.log(greet.apply(data, ["Hi"]));
+
+const fn = greet.bind(data);
+console.log(fn("Welcome"));
