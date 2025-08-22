@@ -1,0 +1,18 @@
+const user = {
+  name: "Sara",
+  age: 22,
+  address: {
+    city: "London",
+    pin: 12345
+  },
+  skills: ["JS", "Python"]
+};
+
+const { name, address: { city }, skills } = user;
+console.log(name, city, skills);
+
+for (let key in user) {
+  console.log(key, user[key]);
+}
+
+Object.keys(user).forEach(k => console.log(k, user[k]));
